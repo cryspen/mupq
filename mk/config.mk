@@ -88,6 +88,7 @@ endif
 CPPFLAGS += -DMUPQ -DMUPQ_NAMESPACE=$(MUPQ_NAMESPACE) -DMUPQ_ITERATIONS=$(MUPQ_ITERATIONS)
 
 CFLAGS += \
+	-Wno-incompatible-pointer-types \
 	-Wall -Wextra -Wshadow \
 	-MMD \
 	-fno-common \
